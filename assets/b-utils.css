@@ -1,6 +1,7 @@
 :root {
-  --h-h: 60px;
-  --p-i: 40px;
+  --h-h: 112px;
+  --p-i: 20px;
+  --c-bg: #feeada;
   @media (width < 770px) {
     --h-h: 80px;
     --p-i: 20px;

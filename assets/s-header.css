@@ -2,30 +2,34 @@
   height: var(--h-h);
 }
 .h {
-  padding-inline: var(--p-i);
+  padding: var(--p-i);
   height: var(--h-h);
   width: 100%;
-  background: white;
+  /* background: white; */
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
   display: flex;
-  align-items: center;
-  gap: 24px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.h_l,
-.h_r,
-.h_r-m {
-  flex-basis: 100%;
+.h_logo {
+  width: 140rem;
 }
+.h_logo svg {
+  fill: black;
+}
+
 .h_m {
   flex-shrink: 0;
 }
+
 .h_r {
   display: flex;
-  justify-content: flex-end;
-  gap: 28px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8rem;
   @media (width < 770px) {
     display: none;
   }
@@ -33,7 +37,8 @@
 
 .h_n {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 8rem;
   @media (width < 770px) {
     display: none;
   }
@@ -43,15 +48,6 @@
 }
 .h_n a {
   font-size: 12px;
-}
-
-.h_m a figure {
-  width: 80px;
-}
-.h_m a span {
-  font-size: 14px;
-  font-weight: 500;
-  color: #333;
 }
 
 .h_r div {
