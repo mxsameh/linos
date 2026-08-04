@@ -56,6 +56,7 @@
 
 .h_cb {
   font-size: 12px;
+  display: none;
 }
 .h_cb_count {
   color: #333;
