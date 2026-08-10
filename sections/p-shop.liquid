@@ -16,6 +16,7 @@
       All
     </button>
 
+    <span>-</span>
     {% for tag in shop_tags %}
       <button
         type="button"
@@ -24,7 +25,6 @@
       >
         {{ tag }}
       </button>
-      <span>-</span>
       {% unless forloop.last %}
         <span>-</span>
       {% endunless %}
