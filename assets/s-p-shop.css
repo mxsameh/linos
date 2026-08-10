@@ -6,6 +6,7 @@
 
 .filters {
   display: flex;
+  justify-content: center;
   gap: 24rem 16rem;
   margin-bottom: 32rem;
   max-width: 1000rem;
@@ -14,6 +15,7 @@
 .filters button {
   font-size: 40rem;
   font-weight: normal;
+  text-transform: capitalize;
 }
 
 .products {
