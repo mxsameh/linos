@@ -5,20 +5,7 @@
 <div class="p">
   <h1>SHOP</h1>
 
-  {% for tag in collection.all_tags %}
-    <a
-      href="{{ collection.url }}/{{ tag | handleize }}"
-      class="{% if current_tags contains tag %}active{% endif %}"
-    >
-      {{ tag }}
-    </a>
-  {% endfor %}
 
-  {% for product in collection.products %}
-    {% if product.tags contains 'Black' %}
-      <h3>{{ product.title }}</h3>
-    {% endif %}
-  {% endfor %}
 
   <div class="shop-page">
     <header class="shop-header">
