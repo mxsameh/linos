@@ -19,8 +19,9 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20rem;
 }
-.f_l h4{
-  font-size: 14px;
+.f_l h4 {
+  font-size: 16rem;
+  color: #888;
   text-transform: uppercase;
 }
 .f_l ul {
