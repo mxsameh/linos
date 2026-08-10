@@ -4,9 +4,11 @@
 }
 
 .f_l {
+  flex-basis: 100%;
   background-color: #532911;
 }
 .f_r {
+  flex-basis: 100%;
   background-color: #fab9b6;
 }
 
