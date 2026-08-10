@@ -17,6 +17,7 @@
   display: flex;
 }
 .f_l .b {
+  margin-top: 200rem;
   display: flex;
   justify-content: space-between;
 }
