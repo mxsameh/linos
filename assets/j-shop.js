@@ -1,10 +1,9 @@
 const filters = document.querySelectorAll("[data-filter]");
-const products = document.querySelectorAll(".product-card");
+const products = document.querySelectorAll(".products li");
 
 filters.forEach((filter) => {
   filter.addEventListener("click", () => {
     const selectedFilter = filter.dataset.filter;
-    console.log("sf", selectedFilter);
 
     filters.forEach((item) => {
       item.classList.remove("is-active");
