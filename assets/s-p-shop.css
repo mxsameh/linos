@@ -4,6 +4,7 @@
 }
 
 .products{
-  display: flex
-  fle
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300rem, 1fr));
+
 }
