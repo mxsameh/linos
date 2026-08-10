@@ -19,6 +19,14 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20rem;
 }
+.f_l ul{
+
+
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+
+}
 .f_l .b {
   margin-top: 200rem;
   display: flex;
