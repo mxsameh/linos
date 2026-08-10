@@ -4,6 +4,12 @@
   padding-inline: var(--p-i);
 }
 
+.filters{
+  display: flex;
+  gap: 16rem;
+  margin-bottom: 32rem;
+}
+
 .products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
