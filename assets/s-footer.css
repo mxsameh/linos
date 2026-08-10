@@ -4,8 +4,11 @@
 }
 
 .f_l {
+  background-color: #f5f5f5;
 }
-.f_r{}
+.f_r{
+
+}
 
 .f_t {
   display: flex;
