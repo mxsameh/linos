@@ -3,8 +3,7 @@
   min-height: calc(100vh - var(--h-h) - 358rem);
 }
 
-.products{
+.products {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300rem, 1fr));
-
+  grid-template-columns: repeat(4, 1fr);
 }
