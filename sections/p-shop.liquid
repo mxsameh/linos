@@ -37,7 +37,6 @@
     <main class="shop-products">
       {% for product in collections.all.products %}
         {% assign product_tags = product.tags | join: ',' | handleize | split: ',' %}
-
         <article
           class="product-card"
           data-product-tags="{{ product_tags | join: ' ' }}"
