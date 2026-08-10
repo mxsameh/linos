@@ -19,9 +19,6 @@
   text-transform: capitalize;
   color: #787878;
 }
-.filters button.active{
-  color: 
-}
 .filters span {
   display: block;
   width: 30rem;
