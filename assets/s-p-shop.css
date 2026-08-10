@@ -4,7 +4,7 @@
   padding-inline: var(--p-i);
 }
 
-.filters{
+.filters {
   display: flex;
   gap: 16rem;
   margin-bottom: 32rem;
@@ -14,4 +14,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 80rem 20rem;
+}
+
+.products li {
+  min-width: 0; /* ✅ Critical to prevent overflow */
 }
