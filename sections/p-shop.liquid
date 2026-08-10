@@ -35,7 +35,7 @@
         class="product-card"
         data-product-tags="{{ product_tags | join: ' ' }}"
       >
-        {% render 'product-card' %}
+        {% render 'product-card', product: product %}
       </article>
     {% endfor %}
   </main>
