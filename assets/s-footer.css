@@ -4,7 +4,8 @@
 }
 
 .f_l {
-  padding-inline: var(--p-i);
+  padding: var(--p-i);
+
   flex-basis: 100%;
   background-color: #532911;
 }
