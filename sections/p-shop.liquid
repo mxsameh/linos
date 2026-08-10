@@ -14,6 +14,12 @@
       {{ tag }}
     </a>
   {% endfor %}
+
+  {% for product in collection.products %}
+    {% if product.tags contains 'Black' %}
+      <h3>{{ product.title }}</h3>
+    {% endif %}
+  {% endfor %}
 </div>
 
 {% schema %}
