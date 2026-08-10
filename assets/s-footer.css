@@ -25,6 +25,7 @@
   color: #888;
   text-transform: uppercase;
 }
+
 .f_l ul {
   margin-top: 16rem;
   display: flex;
@@ -32,31 +33,14 @@
   gap: 8rem;
   font-size: 16rem;
 }
+
 .f_l .b {
   margin-top: 200rem;
   display: flex;
   justify-content: space-between;
 }
 
-.f_t {
-  display: flex;
-  gap: 40px;
-  padding-block: 32px;
-  justify-content: space-between;
-  @media (width < 700px) {
-    flex-direction: column;
-    justify-content: unset;
-  }
-}
 
-.f_t ul {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
 
 .f_t li {
   font-size: 14px;
