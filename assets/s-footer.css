@@ -4,13 +4,12 @@
 }
 
 .f_l {
-  padding: var(--p-i);
-
+  padding: 24rem var(--p-i);
   flex-basis: 100%;
   background-color: #532911;
 }
 .f_r {
-  padding-inline: var(--p-i);
+  padding: 24rem var(--p-i);
   flex-basis: 100%;
   background-color: #fab9b6;
 }
