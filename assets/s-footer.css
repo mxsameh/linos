@@ -41,6 +41,9 @@
   justify-content: space-between;
 }
 
-.f_r {
-
+.f_r .logo {
+  margin-top: auto;
+}
+.f_r svg {
+  fill: #7b1315;
 }
