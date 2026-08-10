@@ -24,7 +24,9 @@
       >
         {{ tag }}
       </button>
-      <span>-</span>
+      {% unless forloop.last %}
+        <span>-</span>
+      {% endunless %}
     {% endfor %}
   </nav>
 
