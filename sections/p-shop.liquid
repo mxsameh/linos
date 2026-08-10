@@ -6,9 +6,7 @@
 <div class="p">
   <h1>SHOP</h1>
 
-  <h1>{{ page.title }}</h1>
-
-  <div class="shop-filters" data-filters>
+  <nav class="shop-filters" data-filters>
     <button
       type="button"
       class="shop-filter is-active"
@@ -26,7 +24,7 @@
         {{ tag }}
       </button>
     {% endfor %}
-  </div>
+  </nav>
 
   <main class="shop-products">
     {% for product in collections.all.products %}
