@@ -1,8 +1,11 @@
 {{ 's-p-about.css' | asset_url | stylesheet_tag }}
 
+{% assign collection = collections.all %}
+
 <div class="p">
   <h1>SHOP</h1>
   {{ collection.all_tags | json }}
+
   {% for tag in collection.all_tags %}
     <a
       href="{{ collection.url }}/{{ tag | handleize }}"
