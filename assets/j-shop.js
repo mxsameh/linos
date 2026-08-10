@@ -4,7 +4,6 @@ const products = document.querySelectorAll(".product-card");
 filters.forEach((filter) => {
   filter.addEventListener("click", () => {
     const selectedFilter = filter.dataset.filter;
-    console.log("sf", selectedFilter);
 
     filters.forEach((item) => {
       item.classList.remove("is-active");
