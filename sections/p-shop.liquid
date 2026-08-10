@@ -27,7 +27,7 @@
     {% endfor %}
   </nav>
 
-  <ul>
+  <ul class="products">
     {% for product in collections.all.products %}
       {% assign product_tags = product.tags | join: ',' | handleize | split: ',' %}
       <li
