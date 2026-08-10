@@ -6,7 +6,7 @@
 
 .filters {
   display: flex;
-  gap: 16rem;
+  gap: 24rem 16rem;
   margin-bottom: 32rem;
 }
 
