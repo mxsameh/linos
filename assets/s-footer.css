@@ -4,20 +4,21 @@
 }
 
 .f_l {
+  padding-inline: var(--p-i);
   flex-basis: 100%;
   background-color: #532911;
 }
 .f_r {
+  padding-inline: var(--p-i);
   flex-basis: 100%;
   background-color: #fab9b6;
 }
-.f_l .t{
+.f_l .t {
   display: flex;
 }
-.f_l .b{
+.f_l .b {
   display: flex;
   justify-content: space-between;
-
 }
 
 .f_t {
