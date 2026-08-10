@@ -27,11 +27,10 @@
     {% endfor %}
   </nav>
 
-  <ul >
+  <ul>
     {% for product in collections.all.products %}
       {% assign product_tags = product.tags | join: ',' | handleize | split: ',' %}
       <li
-        class="product-card"
         data-product-tags="{{ product_tags | join: ' ' }}"
       >
         {% render 'product-card', product: product %}
