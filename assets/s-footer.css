@@ -12,7 +12,11 @@
   background-color: #fab9b6;
 }
 .f_l .t{
-  disp
+  display: flex;
+}
+.f_l .b{
+  display: flex;
+  justify-content: space-between;
 
 }
 
