@@ -7,6 +7,12 @@
     max-width: 600px;
   }
 }
+
+.f_l{
+
+}
+
+
 .f_t {
   display: flex;
   gap: 40px;
