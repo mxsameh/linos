@@ -6,10 +6,10 @@ filters.forEach((filter) => {
     const selectedFilter = filter.dataset.filter;
 
     filters.forEach((item) => {
-      item.classList.remove("is-active");
+      item.classList.remove("active");
     });
 
-    filter.classList.add("is-active");
+    filter.classList.add("active");
 
     products.forEach((product) => {
       const productTags = product.dataset.productTags.split(" ");
