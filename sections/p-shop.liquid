@@ -2,7 +2,8 @@
 
 <div class="p">
   <h1>SHOP</h1>
-   {% for tag in collection.all_tags %}
+  {% echo collection.all_tags %}
+  {% for tag in collection.all_tags %}
     <a
       href="{{ collection.url }}/{{ tag | handleize }}"
       class="{% if current_tags contains tag %}active{% endif %}"
