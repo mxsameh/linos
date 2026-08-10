@@ -3,6 +3,8 @@
   * Fonts
   * --------------------------------------------------
 {% endcomment %}
+ 
+
 <style>
   @font-face {
     font-family: "cg";
@@ -21,9 +23,17 @@
   }
 
   @font-face {
-    font-family: "h";
+    font-family: "m";
+    src: url('{{ "f-m-r.woff2" | asset_url }}') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "m";
     src: url('{{ "f-m-m.woff2" | asset_url }}') format('woff2');
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
   }
