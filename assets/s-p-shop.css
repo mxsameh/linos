@@ -8,9 +8,12 @@
   display: flex;
   gap: 24rem 16rem;
   margin-bottom: 32rem;
-  font-size: 40rem;
   max-width: 1000rem;
   margin-inline: auto;
+}
+.filters button{
+  
+
 }
 
 .products {
