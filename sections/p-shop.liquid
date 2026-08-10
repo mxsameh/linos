@@ -1,15 +1,10 @@
 {{ 's-p-about.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'j-shop.js' | asset_url }}" defer="defer"></script>
 
-{% comment %}
-  {% assign collection = collections.all %}
-{% endcomment %}
 
 <div class="p">
   <h1>SHOP</h1>
 
-  <div class="shop-page">
-    <header class="shop-header">
       <h1>{{ page.title }}</h1>
 
       <div class="shop-filters" data-filters>
@@ -21,7 +16,6 @@
           All
         </button>
 
-        {% assign shop_tags = 'floral,berries,Birthday' | split: ',' %}
 
         {% for tag in shop_tags %}
           <button
