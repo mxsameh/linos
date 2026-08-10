@@ -15,8 +15,8 @@
   background-color: #fab9b6;
 }
 .f_l .t {
-  display: flex;
-  
+  display: grid;
+  gap: 20rem;
 }
 .f_l .b {
   margin-top: 200rem;
