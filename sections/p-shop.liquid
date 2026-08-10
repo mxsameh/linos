@@ -2,7 +2,7 @@
 
 <div class="p">
   <h1>SHOP</h1>
-  {% echo collection.all_tags %}
+  {{ collection.all_tags | json }}
   {% for tag in collection.all_tags %}
     <a
       href="{{ collection.url }}/{{ tag | handleize }}"
