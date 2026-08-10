@@ -16,6 +16,7 @@
 }
 .f_l .t {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20rem;
 }
 .f_l .b {
