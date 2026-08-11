@@ -3,7 +3,7 @@
 <div class="p">
   <h1>PORTFOLIO</h1>
 
-  <div class='category'>
+  <div class="category">
     <img alt="imaa" />
     <img alt="imaa" />
     <h2>⁠WEDDINGS</h2>
@@ -14,6 +14,19 @@
 {% schema %}
 {
   "name": "portfolio",
-  "settings": []
+  "settings": [],
+  "blocks": [
+    {
+      "type": "filter",
+      "name": "Filter",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}
