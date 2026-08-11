@@ -2,9 +2,7 @@
   const imgs=[]
   {% for block in section.blocks %}
          const product =
-         imgs.push(
-         {{ block.settings.image| image_url | json}};
-      );
+         imgs.push({{ block.settings.image| image_url | json}});
     {% endfor %}
 </script>
 
