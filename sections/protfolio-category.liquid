@@ -12,7 +12,7 @@
     <img />
   </figure>
 
-  <div class="cat_h" style: order: {{ section.settings.order }} ;>
+  <div class="cat_h" style: grid-column: {{ section.settings.order }} ;>
     <h2>{{ section.settings.heading }}</h2>
     <nav>
       <button class="prev">
@@ -116,6 +116,12 @@
       "type": "text",
       "id": "heading",
       "label": "Heading"
+    },
+    {
+      "id": "order",
+      "label": "Order",
+      "type": "number",
+      "default": 2
     }
   ],
   "blocks": [
@@ -127,12 +133,6 @@
           "id": "image",
           "label": "Image",
           "type": "image_picker"
-        },
-        {
-          "id": "order",
-          "label": "Order",
-          "type": "number",
-          "default": 2
         }
       ]
     }
