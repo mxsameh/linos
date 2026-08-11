@@ -15,13 +15,6 @@
   grid-auto-flow: column;
   grid-auto-columns: 1fr; */
 }
-.category > *{
-    flex-basis: calc((100% - 3*20rem))
-}
-.category img {
-  aspect-ratio: 3/4;
-  /* background: #ededed; */
-}
 .cat_h {
   grid-column: 2;
 }
@@ -31,6 +24,9 @@
   font-size: 40rem;
   font-family: "cg";
   font-weight: 500;
+}
+.category img {
+  aspect-ratio: 3/4;
 }
 .category figure:nth-child(4) {
   background: blue;
