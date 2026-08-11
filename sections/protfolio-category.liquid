@@ -9,7 +9,7 @@
 {% endcomment %}
 
 <script>
-  const categories = [
+  const images = [
     {% for block in section.blocks %}
         {% if block.settings.image %}
           {{ block.settings.image | image_url: width: 1200 | json }}
@@ -20,7 +20,7 @@
     {% endfor %}
   ];
 
-  console.log(categories);
+  console.log(images);
 </script>
 
 <div class="category">
