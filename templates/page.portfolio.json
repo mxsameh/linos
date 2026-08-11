@@ -18,7 +18,9 @@
       "blocks": {
         "image_jqUdzd": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/talks.png"
+          }
         },
         "image_hcdR73": {
           "type": "image",
