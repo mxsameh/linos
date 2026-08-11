@@ -25,7 +25,9 @@
 .cat_h {
   grid-column: 2;
 }
-.cat_h
+.category:nth-child(even){
+
+}
 .cat_h h2 {
   text-transform: uppercase;
   text-align: center;
