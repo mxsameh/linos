@@ -30,7 +30,9 @@
   justify-content: center;
   gap: 24rem;
 }
-.cat_h nav button.
+.cat_h nav button:first-child svg {
+  transform: rotate(180deg);
+}
 
 .category img {
   aspect-ratio: 3/4;
