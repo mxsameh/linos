@@ -23,8 +23,10 @@
   font-family: "cg";
   font-weight: 500;
 }
-.cat_h nav{
-
+.cat_h nav {
+  display: flex;
+  justify-content: center;
+  gap: 24rem;
 }
 
 .category img {
