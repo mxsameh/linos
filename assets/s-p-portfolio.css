@@ -15,6 +15,7 @@
 }
 .category img {
   aspect-ratio: 3/4;
+  background: #ededed;
 }
 .cat_h {
   grid-column: 2;
