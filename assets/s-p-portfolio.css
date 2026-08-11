@@ -15,6 +15,9 @@
   grid-auto-flow: column;
   grid-auto-columns: 1fr; */
 }
+.category > *{
+    flex
+}
 .category img {
   aspect-ratio: 3/4;
   /* background: #ededed; */
