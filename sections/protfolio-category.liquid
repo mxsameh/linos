@@ -1,8 +1,8 @@
 <script>
   {% for block in section.blocks %}
-         const product =  {{ block.settings.image | image_url: width: 1200 | image_tag }};
-  console.log('pp',product)
-  {% endfor %}
+         const product =  {{ block.settings.image | json}};
+        console.log('pp',product)
+    {% endfor %}
 </script>
 
 <div class="category">
