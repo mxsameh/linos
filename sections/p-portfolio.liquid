@@ -1,5 +1,16 @@
 {{ 's-p-portfolio.css' | asset_url | stylesheet_tag }}
 
+<script>
+  const categories = [
+    {% for block in section.blocks %}
+      {
+        image: {{ block.settings.image | image_url: width: 1200 | json }}
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  console.log(categories);
+</script>
 <div class="p">
   <h1>PORTFOLIO</h1>
 
