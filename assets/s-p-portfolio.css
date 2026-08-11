@@ -24,11 +24,13 @@
   font-weight: 500;
 }
 .cat_h nav {
+  margin-inline: auto;
   margin-top: 24rem;
   display: flex;
   justify-content: center;
   gap: 24rem;
 }
+.cat_h nav button
 
 .category img {
   aspect-ratio: 3/4;
