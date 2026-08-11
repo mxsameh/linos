@@ -1,8 +1,15 @@
 <div class="category">
-  <img alt="imaa" />
-  <img alt="imaa" />
-  <h2>⁠WEDDINGS</h2>
-  <img alt="imaa" />
+  {% for block in section.blocks %}
+    <figure>
+      <img
+        src="{{ block.settings.image | image_url}}"
+        width="auto"
+        height="auto"
+      >
+    </figure>
+  {% endfor %}
+
+  <h2>{{ section.settings.heading }}</h2>
 </div>
 
 {% schema %}
@@ -17,14 +24,9 @@
   ],
   "blocks": [
     {
-      "type": "category",
-      "name": "Category",
+      "type": "image",
+      "name": "Image",
       "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title"
-        },
         {
           "id": "image",
           "label": "Image",
