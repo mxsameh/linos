@@ -1,12 +1,12 @@
-{% comment %}
   <script>
     {% for block in section.blocks %}
            const product =  {{ block.settings.image| image_url | json}};
           console.log('pp',product)
       {% endfor %}
   </script>
-{% endcomment %}
 
+
+{% comment %}
 <script>
   const categories = [
     {% for block in section.blocks %}
@@ -22,6 +22,7 @@
 
   console.log(categories);
 </script>
+{% endcomment %}
 
 <div class="category">
   {% for block in section.blocks %}
