@@ -1,7 +1,9 @@
 <script>
-
+    {% for block in section.blocks %}
   const product = {{ section.blocks | json }};
   console.log('pp',product)
+    {% endfor %}
+
   const categories = [
     {% for block in section.blocks %}
       {
