@@ -3,8 +3,11 @@
   min-height: calc(100vh - var(--h-h) - 358rem);
 }
 
-
-.category{
-    display:grid;
-
+.category {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+.category img{
+    
 }
