@@ -16,7 +16,7 @@
 .category img {
   aspect-ratio: 3/4;
 }
-.category h2 {
+.cat_h {
   grid-column: 2;
   text-transform: uppercase;
   text-align: center;
