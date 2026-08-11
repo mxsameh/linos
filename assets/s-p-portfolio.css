@@ -15,6 +15,7 @@
   aspect-ratio: 3/4;
 }
 .category h2 {
+  text-transform: uppercase;
   text-align: center;
   font-size: 40rem;
   font-family: "cg";
