@@ -22,12 +22,6 @@
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
 }
-.cat_h {
-  grid-column: 2;
-}
-.category:nth-child(even) .cat_h {
-  grid-column: 3;
-}
 .cat_h h2 {
   text-transform: uppercase;
   text-align: center;
