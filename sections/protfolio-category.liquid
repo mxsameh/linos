@@ -1,10 +1,13 @@
 <script>
   const images = [
+    {% assign has_image = false %}
+
     {% for block in section.blocks %}
-        {% if block.settings.image %}
-          {{ block.settings.image | image_url: width: 1200 | json }}
-        {% endif %}
-      {% unless forloop.last %},{% endunless %}
+      {% if block.settings.image %}
+        {% if has_image %},{% endif %}
+        {{ block.settings.image | image_url: width: 1200 | json }}
+        {% assign has_image = true %}
+      {% endif %}
     {% endfor %}
   ];
 
