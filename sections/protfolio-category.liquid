@@ -3,7 +3,7 @@
     {% for block in section.blocks %}
       {
         image: {% if block.settings.image %}
-          {{ block.settings.image | image_url: width: 1200 | json }}
+          {{ block.settings.image | image_url }}
         {% else %}
           null
         {% endif %}
