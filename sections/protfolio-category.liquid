@@ -2,7 +2,11 @@
   const categories = [
     {% for block in section.blocks %}
       {
-        image: {{ block.settings.image | image_url: width: 1200 | json }}
+        image: {% if block.settings.image %}
+          {{ block.settings.image | image_url: width: 1200 | json }}
+        {% else %}
+          null
+        {% endif %}
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ];
