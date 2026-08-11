@@ -1,8 +1,9 @@
 .p {
-  min-height: calc(100dvh - var(--h-h) - 358rem);
-  min-height: calc(100vh - var(--h-h) - 358rem);
+  /* min-height: calc(100dvh - var(--h-h) - 358rem);
+  min-height: calc(100vh - var(--h-h) - 358rem); */
   /* padding-bottom: 80rem; */
   padding-inline: var(--p-i);
+  padding0to
 }
 .p h1 {
   text-transform: uppercase;
