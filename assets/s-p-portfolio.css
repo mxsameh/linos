@@ -16,7 +16,7 @@
   grid-auto-columns: 1fr; */
 }
 .category > *{
-    flex-basis: calc((100% / 4)
+    flex-basis: calc((100% - 3*20rem))
 }
 .category img {
   aspect-ratio: 3/4;
