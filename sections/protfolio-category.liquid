@@ -1,7 +1,6 @@
 <script>
-
-  const product = {{ product | json }};
-  console.log(product)
+  const product = {{ section.blocks | json }};
+  console.log('pp',product)
   const categories = [
     {% for block in section.blocks %}
       {
