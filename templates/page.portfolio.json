@@ -22,34 +22,30 @@
             "image": "shopify://shop_images/talks.png"
           }
         },
-        "image_hcdR73": {
-          "type": "image",
-          "settings": {}
-        },
         "image_ma9Bik": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_ilus86ilus86ilus.png"
+          }
         },
         "image_FYJk7C": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_bo0i09bo0i09bo0i.png"
+          }
         },
         "image_L8QLEF": {
           "type": "image",
-          "settings": {}
-        },
-        "image_93rgrY": {
-          "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/cult-v.webp"
+          }
         }
       },
       "block_order": [
         "image_jqUdzd",
-        "image_hcdR73",
         "image_ma9Bik",
         "image_FYJk7C",
-        "image_L8QLEF",
-        "image_93rgrY"
+        "image_L8QLEF"
       ],
       "name": "Portfolio Category",
       "settings": {
