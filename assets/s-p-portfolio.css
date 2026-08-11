@@ -25,7 +25,7 @@
 .cat_h {
   grid-column: 2;
 }
-.category:nth-child(even) {
+.category:nth-child(even) .cat_h {
   grid-column: 3;
 }
 .cat_h h2 {
