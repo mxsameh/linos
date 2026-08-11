@@ -1,7 +1,8 @@
 <script>
   const imgs=[]
   {% for block in section.blocks %}
-         imgs.push({{ block.settings.image| image_url | json}});
+    const s = {{ block.settings.image | image_url | json }};
+         imgs.push(s);
     {% endfor %}
 </script>
 
