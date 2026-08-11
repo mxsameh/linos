@@ -18,6 +18,8 @@
 }
 .cat_h {
   grid-column: 2;
+}
+.cat_h h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 40rem;
