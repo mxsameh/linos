@@ -1,6 +1,6 @@
 <script>
   {% for block in section.blocks %}
-         const product =  {{ block.settings.image | json}};
+         const product =  {{ block.settings.image| image_url | json}};
         console.log('pp',product)
     {% endfor %}
 </script>
