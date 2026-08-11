@@ -13,68 +13,89 @@
     <h2>{{ section.settings.heading }}</h2>
     <button class="btn">change</button>
   </div>
-
-  {% comment %}
-    {% for block in section.blocks %}
-      <figure>
-        <img
-          src="{{ block.settings.image | image_url}}"
-          width="auto"
-          height="auto"
-        >
-      </figure>
-    {% endfor %}
-  {% endcomment %}
 </div>
 
 <script>
+  (() => {
+
+    const section = document.querySelector(
+      '#category-{{ section.id }}'
+    );
+
     const images = [
       {% assign has_image = false %}
 
       {% for block in section.blocks %}
         {% if block.settings.image %}
+
           {% if has_image %},{% endif %}
-          {{ block.settings.image | image_url: width: 1200 | json }}
+
+          {{ block.settings.image
+            | image_url: width: 1200
+            | json
+          }}
+
           {% assign has_image = true %}
+
         {% endif %}
       {% endfor %}
     ];
 
-    console.log(images);
+    const imageElements = section.querySelectorAll(
+      'figure img'
+    );
 
-    const imageElements = document.querySelectorAll('.category figure img');
-  const changeButton = document.querySelector('.btn');
-  console.log(changeButton);
+    const nextButton = section.querySelector('.next');
+    const prevButton = section.querySelector('.prev');
 
-  let currentIndex = 0;
+    let currentIndex = 0;
 
-  function updateImages() {
-    imageElements.forEach((img, i) => {
-      img.src = images[currentIndex + i];
+
+    // Preload images
+    images.forEach(src => {
+      const img = new Image();
+      img.src = src;
     });
 
-    // Disable when we're showing the final 3
-    changeButton.disabled = currentIndex + 3 >= images.length;
-  }
 
-  updateImages();
+    function updateImages() {
 
-  changeButton.addEventListener('click', () => {
-    let nextIndex = currentIndex + 3;
+      imageElements.forEach((img, i) => {
 
-    // If the next step would leave fewer than 3 images,
-    // jump back so the final 3 are displayed.
-    if (nextIndex + 3 > images.length) {
-      nextIndex = images.length - 3;
+        const index =
+          (currentIndex + i) % images.length;
+
+        img.src = images[index];
+
+      });
+
     }
 
-    if (nextIndex === currentIndex) return;
 
-    currentIndex = nextIndex;
+    nextButton.addEventListener('click', () => {
+
+      currentIndex =
+        (currentIndex + 3) % images.length;
+
+      updateImages();
+
+    });
+
+
+    prevButton.addEventListener('click', () => {
+
+      currentIndex =
+        (currentIndex - 3 + images.length)
+        % images.length;
+
+      updateImages();
+
+    });
+
+
     updateImages();
-  });
 
-    console.log(images);
+  })();
 </script>
 
 {% schema %}
