@@ -16,32 +16,85 @@
     "protfolio_category_BMhnem": {
       "type": "protfolio-category",
       "blocks": {
+        "image_jqUdzd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/talks.png"
+          }
+        },
+        "image_ma9Bik": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_ilus86ilus86ilus.png"
+          }
+        },
         "image_FYJk7C": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_bo0i09bo0i09bo0i.png"
+          }
         },
         "image_L8QLEF": {
           "type": "image",
-          "settings": {}
-        },
-        "image_93rgrY": {
-          "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/cult-v.webp"
+          }
         }
       },
       "block_order": [
+        "image_jqUdzd",
+        "image_ma9Bik",
         "image_FYJk7C",
-        "image_L8QLEF",
-        "image_93rgrY"
+        "image_L8QLEF"
       ],
       "name": "Portfolio Category",
       "settings": {
         "heading": "Wedding"
       }
+    },
+    "protfolio_category_tGma4f": {
+      "type": "protfolio-category",
+      "blocks": {
+        "image_QAXeNE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_bo0i09bo0i09bo0i.png"
+          }
+        },
+        "image_8AVBTT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_9738.heic"
+          }
+        },
+        "image_Hjf6LC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/talks.png"
+          }
+        },
+        "image_YH93zb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cult-v.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_QAXeNE",
+        "image_8AVBTT",
+        "image_Hjf6LC",
+        "image_YH93zb"
+      ],
+      "name": "Portfolio Category",
+      "settings": {
+        "heading": "Engagements"
+      }
     }
   },
   "order": [
     "main",
-    "protfolio_category_BMhnem"
+    "protfolio_category_BMhnem",
+    "protfolio_category_tGma4f"
   ]
 }
