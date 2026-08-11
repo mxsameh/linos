@@ -49,7 +49,8 @@
       ],
       "name": "Portfolio Category",
       "settings": {
-        "heading": "Wedding"
+        "heading": "Wedding",
+        "order": 2
       }
     },
     "protfolio_category_tGma4f": {
@@ -88,7 +89,8 @@
       ],
       "name": "Portfolio Category",
       "settings": {
-        "heading": "Engagements"
+        "heading": "Engagements",
+        "order": 3
       }
     }
   },
