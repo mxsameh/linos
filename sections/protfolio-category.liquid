@@ -24,15 +24,25 @@
 </script>
 
 <div class="category">
-  {% for block in section.blocks %}
-    <figure>
-      <img
-        src="{{ block.settings.image | image_url}}"
-        width="auto"
-        height="auto"
-      >
-    </figure>
-  {% endfor %}
+  <figure>
+    <img
+      src="{{ block.settings.image | image_url}}"
+      width="auto"
+      height="auto"
+    >
+  </figure>
+
+  {% comment %}
+    {% for block in section.blocks %}
+      <figure>
+        <img
+          src="{{ block.settings.image | image_url}}"
+          width="auto"
+          height="auto"
+        >
+      </figure>
+    {% endfor %}
+  {% endcomment %}
 
   <div class="cat_h">
     <h2>{{ section.settings.heading }}</h2>
