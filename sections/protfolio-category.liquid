@@ -28,36 +28,6 @@
     {% endfor %}
   {% endcomment %}
 </div>
-const imageElements = document.querySelectorAll('.category figure img');
-const changeButton = document.querySelector('.btn');
-
-let currentIndex = 0;
-
-function updateImages() {
-  imageElements.forEach((img, i) => {
-    img.src = images[currentIndex + i];
-  });
-
-  // Disable when we're showing the final 3
-  changeButton.disabled = currentIndex + 3 >= images.length;
-}
-
-updateImages();
-
-changeButton.addEventListener('click', () => {
-  let nextIndex = currentIndex + 3;
-
-  // If the next step would leave fewer than 3 images,
-  // jump back so the final 3 are displayed.
-  if (nextIndex + 3 > images.length) {
-    nextIndex = images.length - 3;
-  }
-
-  if (nextIndex === currentIndex) return;
-
-  currentIndex = nextIndex;
-  updateImages();
-});
 
 {% schema %}
 {
