@@ -10,15 +10,29 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20rem;
   align-items: center;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
 }
 .category img {
   aspect-ratio: 3/4;
+  background: #ededed;
 }
-.category h2 {
-  order: 2;
+.cat_h {
+  grid-column: 2;
+}
+.cat_h h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 40rem;
   font-family: "cg";
   font-weight: 500;
+}
+.category img:nth-child(4) {
+  background: blue;
+}
+.category img:nth-child(5) {
+  background: red;
+}
+.category img:nth-child(6) {
+  background: green;
 }
