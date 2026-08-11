@@ -1,0 +1,40 @@
+.p {
+  min-height: calc(100dvh - var(--h-h) - 358rem);
+  min-height: calc(100vh - var(--h-h) - 358rem);
+  padding-inline: var(--p-i);
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24rem 16rem;
+  margin-bottom: 32rem;
+  max-width: 1000rem;
+  margin-inline: auto;
+}
+.filters button {
+  font-size: 40rem;
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #787878;
+}
+.filters button.active {
+  color: #000;
+}
+.filters span {
+  display: block;
+  width: 30rem;
+  height: 1rem;
+  background-color: #787878;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80rem 20rem;
+}
+
+.products li {
+  min-width: 0; /* ✅ Critical to prevent overflow */
+}

@@ -1,7 +1,45 @@
-{{ 's-p-about.css' | asset_url | stylesheet_tag }}
+{{ 's-p-shop.css' | asset_url | stylesheet_tag }}
+{{ 's-product-card.css' | asset_url | stylesheet_tag }}
 
-<div>
-  <h1>SHOP</h1>
+<script src="{{ 'j-shop.js' | asset_url }}" defer="defer"></script>
+
+{% assign shop_tags = 'floral,berries,birthday' | split: ',' %}
+
+<div class="p">
+  <nav class="filters" data-filters>
+    <button
+      type="button"
+      class="active"
+      data-filter="all"
+    >
+      All
+    </button>
+
+    <span></span>
+    {% for tag in shop_tags %}
+      <button
+        type="button"
+        class="shop-filter"
+        data-filter="{{ tag | handleize }}"
+      >
+        {{ tag }}
+      </button>
+      {% unless forloop.last %}
+        <span>-</span>
+      {% endunless %}
+    {% endfor %}
+  </nav>
+
+  <ul class="products">
+    {% for product in collections.all.products %}
+      {% assign product_tags = product.tags | join: ',' | handleize | split: ',' %}
+      <li
+        data-product-tags="{{ product_tags | join: ' ' }}"
+      >
+        {% render 'product-card', product: product %}
+      </li>
+    {% endfor %}
+  </ul>
 </div>
 
 {% schema %}

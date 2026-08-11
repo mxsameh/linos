@@ -1,0 +1,22 @@
+.p {
+  min-height: calc(100dvh - var(--h-h) - 358rem);
+  min-height: calc(100vh - var(--h-h) - 358rem);
+  padding-bottom: 80rem;
+  padding-inline: var(--p-i);
+}
+
+.category {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20rem;
+  align-items: center;
+}
+.category img {
+  aspect-ratio: 3/4;
+}
+.category h2 {
+  text-align: center;
+  font-size: 40rem;
+  font-family: "cg";
+  font-weight: 500;
+}

@@ -3,27 +3,36 @@
   * Fonts
   * --------------------------------------------------
 {% endcomment %}
+
 <style>
   @font-face {
-    font-family: "h";
-    src: url('{{ "f-helvetica-t.woff2" | asset_url }}') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "h";
-    src: url("{{ 'f-helvetica-r.woff2' | asset_url }}") format("woff2");
+    font-family: "cg";
+    src: url('{{ "f-cg-r.woff2" | asset_url }}') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
   }
 
   @font-face {
-    font-family: "h";
-    src: url('{{ "f-helvetica-b.woff2" | asset_url }}') format('woff2');
-    font-weight: 700;
+    font-family: "cg";
+    src: url("{{ 'f-cg-m.woff2' | asset_url }}") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "m";
+    src: url('{{ "f-m-r.woff2" | asset_url }}') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "m";
+    src: url('{{ "f-m-m.woff2" | asset_url }}') format('woff2');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
   }

@@ -1,0 +1,37 @@
+<div class="category">
+  <img alt="imaa" />
+  <img alt="imaa" />
+  <h2>⁠WEDDINGS</h2>
+  <img alt="imaa" />
+</div>
+
+{% schema %}
+{
+  "name": "portfolio category",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "id": "image",
+          "label": "Image",
+          "type": "image_picker"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

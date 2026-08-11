@@ -15,6 +15,7 @@
   align-items: flex-start;
 }
 .h_logo {
+  display: block;
   width: 140rem;
 }
 .h_logo svg {
@@ -48,6 +49,7 @@
 }
 .h_n a {
   font-size: 12px;
+  font-weight: 500;
 }
 
 .h_r div {
@@ -56,6 +58,7 @@
 
 .h_cb {
   font-size: 12px;
+  display: none;
 }
 .h_cb_count {
   color: #333;

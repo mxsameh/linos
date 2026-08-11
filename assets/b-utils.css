@@ -1,10 +1,10 @@
 :root {
-  --h-h: 112px;
-  --p-i: 20px;
+  --h-h: 92rem;
+  --p-i: 20rem;
   --c-bg: #feeada;
   @media (width < 770px) {
-    --h-h: 80px;
-    --p-i: 20px;
+    --h-h: 92rem;
+    --p-i: 20rem;
   }
 }
 .h-s {
