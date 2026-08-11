@@ -12,7 +12,7 @@
     <img />
   </figure>
 
-  <div class="cat_h" style: order: {{ section.settings.order | default: 2 }} ;>
+  <div class="cat_h" style: order: {{ section.settings.order }} ;>
     <h2>{{ section.settings.heading }}</h2>
     <nav>
       <button class="prev">
@@ -131,7 +131,8 @@
         {
           "id": "order",
           "label": "Order",
-          "type": "number"
+          "type": "number",
+          "default": 2
         }
       ]
     }
