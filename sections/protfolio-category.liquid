@@ -1,14 +1,15 @@
-
-
-
-
+{% schema %}
+{
   "blocks": [
-
-
     {
-      "type": "image",
-      "name": "Image",
+      "type": "category",
+      "name": "Category",
       "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
         {
           "id": "image",
           "label": "Image",
@@ -17,3 +18,9 @@
       ]
     }
   ]
+}
+{% endschema %}
+
+"blocks": [
+
+{ "type": "image", "name": "Image", "settings": [ { "id": "image", "label": "Image", "type": "image_picker" } ] } ]
