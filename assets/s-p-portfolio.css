@@ -26,6 +26,9 @@
 .category img {
   aspect-ratio: 3/4;
 }
+.category figure:nth-child(1) {
+  background: blue;
+}
 .category figure:nth-child(4) {
   background: blue;
 }
