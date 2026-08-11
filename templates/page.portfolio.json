@@ -16,6 +16,18 @@
     "protfolio_category_BMhnem": {
       "type": "protfolio-category",
       "blocks": {
+        "image_jqUdzd": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_hcdR73": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_ma9Bik": {
+          "type": "image",
+          "settings": {}
+        },
         "image_FYJk7C": {
           "type": "image",
           "settings": {}
@@ -30,6 +42,9 @@
         }
       },
       "block_order": [
+        "image_jqUdzd",
+        "image_hcdR73",
+        "image_ma9Bik",
         "image_FYJk7C",
         "image_L8QLEF",
         "image_93rgrY"
