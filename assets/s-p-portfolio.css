@@ -10,6 +10,8 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20rem;
   align-items: center;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
 }
 .category img {
   aspect-ratio: 3/4;
