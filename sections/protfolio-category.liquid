@@ -1,3 +1,4 @@
+{% comment %}
 <script>
   const imgs=[]
   {% for block in section.blocks %}
@@ -5,24 +6,22 @@
          imgs.push(s);
     {% endfor %}
 </script>
+{% endcomment %}
 
-{% comment %}
   <script>
     const categories = [
       {% for block in section.blocks %}
-        {
           image: {% if block.settings.image %}
             {{ block.settings.image | image_url: width: 1200 | json }}
           {% else %}
             null
           {% endif %}
-        }{% unless forloop.last %},{% endunless %}
+        {% unless forloop.last %},{% endunless %}
       {% endfor %}
     ];
 
     console.log(categories);
   </script>
-{% endcomment %}
 
 <div class="category">
   {% for block in section.blocks %}
