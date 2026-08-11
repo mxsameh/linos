@@ -15,7 +15,7 @@
 }
 .category img {
   aspect-ratio: 3/4;
-  background: #ededed;
+  /* background: #ededed; */
 }
 .cat_h {
   grid-column: 2;
@@ -27,12 +27,12 @@
   font-family: "cg";
   font-weight: 500;
 }
-.category img:nth-child(4) {
+.category figure:nth-child(4) {
   background: blue;
 }
-.category img:nth-child(5) {
+.category figure:nth-child(5) {
   background: red;
 }
-.category img:nth-child(6) {
+.category figure:nth-child(6) {
   background: green;
 }
