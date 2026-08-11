@@ -12,3 +12,9 @@
 .category img {
   aspect-ratio: 3/4;
 }
+.category h2 {
+  text-align: center;
+  font-size: 40rem;
+  font-weight: 500;
+  margin-top: 16rem;
+}
