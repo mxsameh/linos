@@ -1,18 +1,112 @@
-<div class="category">
-  {% for block in section.blocks %}
-    <figure>
-      <img
-        src="{{ block.settings.image | image_url}}"
-        width="auto"
-        height="auto"
-      >
-    </figure>
-  {% endfor %}
+<div
+  class="category"
+  id="category-{{ section.id }}"
+>
+  <figure>
+    <img />
+  </figure>
+  <figure>
+    <img />
+  </figure>
+  <figure>
+    <img />
+  </figure>
 
-  <div class="cat_h">
+  <div class="cat_h" style: order: {{ section.settings.order }} ;>
     <h2>{{ section.settings.heading }}</h2>
+    <nav>
+      <button class="prev">
+        {{- 'i-arr.svg' | inline_asset_content -}}
+      </button>
+      <button class="next">
+        {{- 'i-arr.svg' | inline_asset_content -}}
+      </button>
+    </nav>
   </div>
 </div>
+
+<script>
+  (() => {
+
+    const section = document.querySelector(
+      '#category-{{ section.id }}'
+    );
+
+    const images = [
+      {% assign has_image = false %}
+
+      {% for block in section.blocks %}
+        {% if block.settings.image %}
+
+          {% if has_image %},{% endif %}
+
+          {{ block.settings.image
+            | image_url: width: 1200
+            | json
+          }}
+
+          {% assign has_image = true %}
+
+        {% endif %}
+      {% endfor %}
+    ];
+
+    const imageElements = section.querySelectorAll(
+      'figure img'
+    );
+
+    const nextButton = section.querySelector('.next');
+    const prevButton = section.querySelector('.prev');
+
+    let currentIndex = 0;
+
+
+    // Preload images
+    images.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+
+
+    function updateImages() {
+
+      imageElements.forEach((img, i) => {
+
+        const index =
+          (currentIndex + i) % images.length;
+
+        img.src = images[index];
+
+      });
+
+    }
+
+
+    nextButton.addEventListener('click', () => {
+
+      currentIndex =
+        (currentIndex + 3) % images.length;
+
+      updateImages();
+
+    });
+
+
+    prevButton.addEventListener('click', () => {
+
+      currentIndex =
+        (currentIndex - 3 + images.length)
+        % images.length;
+
+      updateImages();
+
+    });
+
+
+    updateImages();
+
+  })();
+</script>
 
 {% schema %}
 {
@@ -33,6 +127,12 @@
           "id": "image",
           "label": "Image",
           "type": "image_picker"
+        },
+        {
+          "id": "order",
+          "label": "Order",
+          "type": "number",
+          "default": 2
         }
       ]
     }
