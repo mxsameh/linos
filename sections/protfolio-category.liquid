@@ -1,28 +1,15 @@
 <div class="category">
+  {% for block in section.blocks %}
+    <figure>
+      <img
+        src="{{ block.settings.image | image_url}}"
+        width="auto"
+        height="auto"
+      >
+    </figure>
+  {% endfor %}
 
-    <figure>
-      <img
-        src="{{ section.settings.d_image | image_url}}"
-        width="auto"
-        height="auto"
-      >
-    </figure>
-    <figure>
-      <img
-        src="{{ section.settings.d_image | image_url}}"
-        width="auto"
-        height="auto"
-      >
-    </figure>
-    <figure>
-      <img
-        src="{{ section.settings.d_image | image_url}}"
-        width="auto"
-        height="auto"
-      >
-    </figure>
-
-  <h2>⁠WEDDINGS</h2>
+  <h2>{{ section.settings.heading }}</h2>
 </div>
 
 {% schema %}
