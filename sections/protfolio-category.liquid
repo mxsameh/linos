@@ -1,7 +1,8 @@
   <script>
+    const imgs=[]
     {% for block in section.blocks %}
            const product =  {{ block.settings.image| image_url | json}};
-          console.log('pp',product)
+           imgs.push(product);
       {% endfor %}
   </script>
 
