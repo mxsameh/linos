@@ -1,9 +1,47 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "p-portfolio",
       "settings": {}
+    },
+    "protfolio_category_BMhnem": {
+      "type": "protfolio-category",
+      "blocks": {
+        "image_FYJk7C": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_L8QLEF": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_93rgrY": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_FYJk7C",
+        "image_L8QLEF",
+        "image_93rgrY"
+      ],
+      "name": "Portfolio Category",
+      "settings": {
+        "heading": "Wedding"
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main",
+    "protfolio_category_BMhnem"
+  ]
 }
