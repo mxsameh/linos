@@ -11,13 +11,72 @@
   height: 100dvh;
   height: 100vh;
 }
-.logo {
+.m .logo {
   width: 550rem;
 }
-.logo svg {
-  mix-blend-mode: difference;
-  fill: #75EADA;
+.m .logo svg {
+  /* mix-blend-mode: difference;
+  fill: #75eada; */
+  fill: #7c1315;
 }
+.images {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+}
+.images figure {
+  position: absolute;
+  opacity: 0;
+  width: 360rem;
+  aspect-ratio: 3/4;
+  background-color: #888;
+}
+.images figure:nth-of-type(1) {
+  left: 10vw;
+  top: 7vh;
+  animation: imageA 12s linear infinite;
+}
+.images figure:nth-of-type(2) {
+  right: 10vw;
+  bottom: 12vh;
+  animation: imageA 12s linear infinite;
+  animation-delay: 3s;
+}
+.images figure:nth-of-type(3) {
+  right: 12vw;
+  top: 7vh;
+  animation: imageA 12s linear infinite;
+  animation-delay: 9s;
+}
+.images figure:nth-of-type(4) {
+  left: 16vw;
+  bottom: 18vh;
+  animation: imageA 12s linear infinite;
+  animation-delay: 6s;
+}
+
 .f {
-  display: none;
+  display: none !important;
+}
+
+@keyframes imageA {
+  0% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

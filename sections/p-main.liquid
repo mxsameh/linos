@@ -1,9 +1,23 @@
 {{ 's-p-main.css' | asset_url | stylesheet_tag }}
 
 <div class="p">
-  <main class='m'>
+  <main class="m">
     <div class="logo">
       {{ 'i-logo.svg' | inline_asset_content }}
+    </div>
+    <div class='images'>
+      <figure>
+        {{ section.settings.image1 | image_url: width: 800 | image_tag }}
+      </figure>
+      <figure>
+        {{ section.settings.image2 | image_url: width: 800 | image_tag }}
+      </figure>
+      <figure>
+        {{ section.settings.image3 | image_url: width: 800 | image_tag }}
+      </figure>
+      <figure>
+        {{ section.settings.image4 | image_url: width: 800 | image_tag }}
+      </figure>
     </div>
   </main>
 </div>
@@ -11,6 +25,27 @@
 {% schema %}
 {
   "name": "main",
-  "settings": []
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image4",
+      "label": "Image 4"
+    }
+  ]
 }
 {% endschema %}

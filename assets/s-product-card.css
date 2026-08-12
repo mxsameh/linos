@@ -1,21 +1,22 @@
 .pc {
   display: block;
-  border: 1px solid #000;
   padding: 16rem;
   min-width: 0; /* ✅ Critical to prevent overflow */
 }
+.pc figure {
+  aspect-ratio: 3/4;
+  background: #888;
+}
 .pc > div {
+  margin-top: 16rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24rem;
+  flex-direction: column;
+  justify-content: center;
   @media (width < 770px) {
     flex-direction: column;
-    gap: 8rem;
   }
 }
 .pc h3 {
-  font-family: "m";
   font-size: 16rem;
   text-align: center;
   font-weight: normal;
@@ -26,4 +27,5 @@
 .pc p {
   flex-shrink: 0;
   font-size: 16rem;
+  text-align: center;
 }

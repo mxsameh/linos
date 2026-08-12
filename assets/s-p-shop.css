@@ -1,6 +1,7 @@
 .p {
   min-height: calc(100dvh - var(--h-h) - 358rem);
   min-height: calc(100vh - var(--h-h) - 358rem);
+  padding-block: 80rem 120rem;
   padding-inline: var(--p-i);
 }
 
@@ -15,6 +16,7 @@
 }
 .filters button {
   font-size: 40rem;
+  font-family: "cg";
   font-weight: normal;
   text-transform: capitalize;
   color: #787878;
@@ -30,6 +32,7 @@
 }
 
 .products {
+  margin-top: 80rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 80rem 20rem;
