@@ -5,6 +5,7 @@
   min-width: 0; /* ✅ Critical to prevent overflow */
 }
 .pc > div {
+  margin-top: 16rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +22,7 @@
   text-overflow: ellipsis;
 }
 .pc p {
-  text-align: center;
   flex-shrink: 0;
   font-size: 16rem;
+  text-align: center;
 }
