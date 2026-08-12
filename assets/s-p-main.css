@@ -18,10 +18,13 @@
   mix-blend-mode: difference;
   fill: #75eada;
 }
-.images{
-
+.images {
+  width: 100vw;
+  height: 100vh;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
 }
 .f {
   display: none !important;
 }
-
