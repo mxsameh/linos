@@ -25,8 +25,8 @@
   position: absolute;
   overflow: hidden;
 }
-.images figure{
-
+.images figure {
+  position: absolute;
 }
 .images figure:nth-of-type(1) {
 }
