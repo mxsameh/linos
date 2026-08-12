@@ -27,7 +27,9 @@
 }
 .images figure {
   position: absolute;
-  opacity:0;
+  opacity: 0;
+  aspect-ratio: 3/4;
+  background-color: #888;
 }
 .images figure:nth-of-type(1) {
   left: 10vw;
