@@ -5,7 +5,7 @@
 }
 .pc figure {
   aspect-ratio: 3/4;
-  backgroun
+  background: #ddd;
 }
 .pc > div {
   margin-top: 16rem;
