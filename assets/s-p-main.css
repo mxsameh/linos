@@ -11,12 +11,12 @@
   height: 100dvh;
   height: 100vh;
 }
-.logo {
+.m .logo {
   width: 550rem;
 }
-.logo svg {
+.m .logo svg {
   mix-blend-mode: difference;
-  fill: #75EADA;
+  fill: #75eada;
 }
 .f {
   display: none;
