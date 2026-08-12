@@ -29,6 +29,9 @@
   position: absolute;
 }
 .images figure:nth-of-type(1) {
+  left: 10vw;
+  top: 7vh;
+  animation: home_img 12s linear infinite;
 }
 .images figure:nth-of-type(2) {
 }
