@@ -6,8 +6,8 @@
 }
 .pc > div {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   gap: 24rem;
   @media (width < 770px) {
     flex-direction: column;
