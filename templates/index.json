@@ -12,12 +12,14 @@
     "main": {
       "type": "p-main",
       "settings": {
-        // "d_video": "shopify://files/videos/7594a74689834926b88e8cd8c4aa8dd7.HD-1080p-7.2Mbps-48407865.mp4",
-        // "m_video": "shopify://files/videos/d70242f11d6d487fa350b8ad2a998d40.HD-1080p-7.2Mbps-48407870.mp4",
-        // "collection_url": "shopify://collections/women",
-        // "title": "Shop the Summer 2025 Womenswear Collection"
+        "image1": "shopify://shop_images/Frame_27.png",
+        "image2": "shopify://shop_images/Frame_29.png",
+        "image3": "shopify://shop_images/Frame_28.png",
+        "image4": "shopify://shop_images/Frame_30.png"
       }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
