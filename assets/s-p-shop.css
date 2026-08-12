@@ -32,6 +32,7 @@
 }
 
 .products {
+  margin-top: 80rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 80rem 20rem;
