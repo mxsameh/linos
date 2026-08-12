@@ -37,19 +37,19 @@
 .images figure:nth-of-type(2) {
   right: 10vw;
   bottom: 12vh;
-  animation: home_img 12s linear infinite;
+  animation: imageA 12s linear infinite;
   animation-delay: 3s;
 }
 .images figure:nth-of-type(3) {
   right: 12vw;
   top: 7vh;
-  animation: home_img 12s linear infinite;
+  animation: imageA 12s linear infinite;
   animation-delay: 9s;
 }
 .images figure:nth-of-type(4) {
   left: 16vw;
   bottom: 18vh;
-  animation: home_img 12s linear infinite;
+  animation: imageA 12s linear infinite;
   animation-delay: 6s;
 }
 
