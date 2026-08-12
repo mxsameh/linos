@@ -1,19 +1,22 @@
 {{ 's-p-main.css' | asset_url | stylesheet_tag }}
 
 <div class="p">
-  <main class='m'>
+  <main class="m">
     <div class="logo">
       {{ 'i-logo.svg' | inline_asset_content }}
     </div>
   </main>
 </div>
 
-
-
-
 {% schema %}
 {
   "name": "main",
-  "settings": []
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image 1"
+    },
+  ]
 }
 {% endschema %}
