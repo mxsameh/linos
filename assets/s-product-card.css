@@ -24,6 +24,7 @@
   text-overflow: ellipsis;
 }
 .pc p {
+  text-align: center;
   flex-shrink: 0;
   font-size: 16rem;
 }
