@@ -21,9 +21,12 @@
 .images {
   width: 100vw;
   height: 100vh;
-  height: 100vh;
+  height: 100dvh;
   position: absolute;
   overflow: hidden;
+}
+.images figure:nth-of-type(1){
+
 }
 .f {
   display: none !important;
