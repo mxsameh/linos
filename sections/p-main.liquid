@@ -5,18 +5,18 @@
     <div class="logo">
       {{ 'i-logo.svg' | inline_asset_content }}
     </div>
-    <div>
+    <div class='images'>
       <figure>
         {{ section.settings.image1 | image_url: width: 800 | image_tag }}
       </figure>
       <figure>
-        {{ section.settings.image1 | image_url: width: 800 | image_tag }}
+        {{ section.settings.image2 | image_url: width: 800 | image_tag }}
       </figure>
       <figure>
-        {{ section.settings.image1 | image_url: width: 800 | image_tag }}
+        {{ section.settings.image3 | image_url: width: 800 | image_tag }}
       </figure>
       <figure>
-        {{ section.settings.image1 | image_url: width: 800 | image_tag }}
+        {{ section.settings.image4 | image_url: width: 800 | image_tag }}
       </figure>
     </div>
   </main>
