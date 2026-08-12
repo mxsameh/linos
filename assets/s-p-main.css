@@ -24,6 +24,7 @@
   height: 100dvh;
   position: absolute;
   overflow: hidden;
+  z-index: -1;
 }
 .images figure {
   position: absolute;
