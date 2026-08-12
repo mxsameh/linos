@@ -3,8 +3,9 @@
   padding: 16rem;
   min-width: 0; /* ✅ Critical to prevent overflow */
 }
-.pc figure{
-  aspect-ratio:''
+.pc figure {
+  aspect-ratio: 3/4;
+  backgroun
 }
 .pc > div {
   margin-top: 16rem;
