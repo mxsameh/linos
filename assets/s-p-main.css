@@ -29,6 +29,7 @@
 .images figure {
   position: absolute;
   opacity: 0;
+  width: 360rem;
   aspect-ratio: 3/4;
   background-color: #888;
 }
