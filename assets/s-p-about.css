@@ -4,6 +4,8 @@
 }
 
 .header{
-  padding
-
+  padding-inline: var(--p-i);
+}
+.header h1{
+  
 }
