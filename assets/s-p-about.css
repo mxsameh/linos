@@ -3,17 +3,18 @@
   min-height: calc(100vh - var(--h-h) - 358rem);
 }
 
-.header{
+.header {
   padding-inline: var(--p-i);
 }
-.header h1{
-  font-family: 'cg';
+.header h1 {
+  font-family: "cg";
   font-size: 90rem;
   font-weight: 500;
-  text-align: center
+  text-align: center;
 }
-.header p{
-  font-size: 24;
-  font-family: 'cg';
+.header p {
+  margin-top: 40rem;
+  font-size: 24rem;
+  font-family: "cg";
   text-align: center;
 }
