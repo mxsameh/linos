@@ -7,5 +7,6 @@
   padding-inline: var(--p-i);
 }
 .header h1{
-  font-family: ;
+  font-family: 'cg';
+  font-weight: 500;
 }
