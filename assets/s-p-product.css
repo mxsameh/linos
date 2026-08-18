@@ -3,6 +3,7 @@
   padding-inline: var(--p-i);
 }
 .product_title {
+  margin-inline: auto;
   max-width: 1250rem;
   text-align: center;
   text-transform: uppercase;
