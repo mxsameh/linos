@@ -1,13 +1,171 @@
 {{ 's-p-about.css' | asset_url | stylesheet_tag }}
 
 <div class="p">
-  <h1>ABOUT</h1>
-</div>
+  <div class="header">
+    <h1>THE STORY</h1>
+    <p>
+      At Lino’s Kitchen, we believe food is about more than what’s on the table. It’s about the feeling it creates, the
+      people it brings together, and the memories that stay with us. We create thoughtful food concepts, beautiful
+      tables, bespoke cakes, and experiences made with care, creativity, and a love for the little details that make
+      every moment feel special.
+    </p>
+  </div>
 
+  <section>
+    <section
+      class="portfolio-tabs"
+      id="portfolio-tabs-{{ section.id }}"
+    >
+      <div class="portfolio-tabs__inner">
+        <div class="portfolio-tabs__image-wrap">
+          {%- for block in section.blocks -%}
+            {%- liquid
+              assign is_first = forloop.first
+            -%}
+            {%- if block.settings.image -%}
+              <img
+                class="portfolio-tabs__image{% if is_first %} is-active{% endif %}"
+                data-category-image="{{ block.id }}"
+                src="{{ block.settings.image | image_url: width: 800 }}"
+                srcset="
+                  {{ block.settings.image | image_url: width: 400 }} 400w,
+                  {{ block.settings.image | image_url: width: 600 }} 600w,
+                  {{ block.settings.image | image_url: width: 800 }} 800w,
+                  {{ block.settings.image | image_url: width: 1000 }} 1000w
+                "
+                sizes="(max-width: 700px) 70vw, 800px"
+                alt="{{ block.settings.label | escape }}"
+                width="{{ block.settings.image.width }}"
+                height="{{ block.settings.image.height }}"
+                loading="{% if is_first %}eager{% else %}lazy{% endif %}"
+                {{ block.shopify_attributes }}
+              >
+            {%- else -%}
+              {{ 'lifestyle-1' | placeholder_svg_tag: 'portfolio-tabs__image portfolio-tabs__image--placeholder' }}
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+
+        <nav>
+          {%- for block in section.blocks -%}
+            <button
+              type="button"
+              class="portfolio-tabs__tab{% if forloop.first %} is-active{% endif %}"
+              data-category-tab="{{ block.id }}"
+              role="tab"
+              aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+              aria-controls="portfolio-tabs-{{ section.id }}"
+              tabindex="{% if forloop.first %}0{% else %}-1{% endif %}"
+              {{ block.shopify_attributes }}
+            >
+              {{ block.settings.label }}
+            </button>
+            {%- unless forloop.last -%}
+              <span class="portfolio-tabs__divider" aria-hidden="true">&mdash;</span>
+            {%- endunless -%}
+          {%- endfor -%}
+        </nav>
+      </div>
+    </section>
+
+    <script>
+      (function () {
+        var section = document.getElementById('portfolio-tabs-{{ section.id }}');
+        if (!section) return;
+
+        var tabs = Array.prototype.slice.call(section.querySelectorAll('[data-category-tab]'));
+        var images = Array.prototype.slice.call(section.querySelectorAll('[data-category-image]'));
+
+        function activate(tab) {
+          var targetId = tab.getAttribute('data-category-tab');
+
+          tabs.forEach(function (t) {
+            var isActive = t === tab;
+            t.classList.toggle('is-active', isActive);
+            t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            t.setAttribute('tabindex', isActive ? '0' : '-1');
+          });
+
+          images.forEach(function (img) {
+            img.classList.toggle('is-active', img.getAttribute('data-category-image') === targetId);
+          });
+        }
+
+        tabs.forEach(function (tab, index) {
+          tab.addEventListener('click', function () {
+            activate(tab);
+          });
+
+          // Roving tabindex: left/right (or up/down) arrow keys move focus between tabs
+          tab.addEventListener('keydown', function (event) {
+            var nextIndex = null;
+
+            if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+              nextIndex = (index + 1) % tabs.length;
+            } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+              nextIndex = (index - 1 + tabs.length) % tabs.length;
+            }
+
+            if (nextIndex !== null) {
+              event.preventDefault();
+              tabs[nextIndex].focus();
+              activate(tabs[nextIndex]);
+            }
+          });
+        });
+      })();
+    </script>
+
+    <div></div>
+  </section>
+</div>
 
 {% schema %}
 {
-  "name": "about",
-  "settings": []
+  "name": "Portfolio Category Tabs",
+  "tag": "section",
+  "class": "shopify-section--portfolio-tabs",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Category"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Portfolio Category Tabs",
+      "blocks": [
+        { "type": "category", "settings": { "label": "Weddings" } },
+        { "type": "category", "settings": { "label": "Engagements" } },
+        { "type": "category", "settings": { "label": "Grazing Tables" } },
+        { "type": "category", "settings": { "label": "Wedding cakes" } },
+        { "type": "category", "settings": { "label": "Children's Celebrations" } },
+        { "type": "category", "settings": { "label": "Desert Tables" } }
+      ]
+    }
+  ]
 }
 {% endschema %}
+
+{% comment %}
+  {% schema %}
+  {
+    "name": "about",
+    "settings": []
+  }
+  {% endschema %}
+{% endcomment %}

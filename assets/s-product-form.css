@@ -1,9 +1,5 @@
 /* PRODUCT OPTIONS */
 .pf {
-  margin-top: 40px;
-  @media (width > 1000px) {
-    margin-top: 80px;
-  }
 }
 
 .option {
@@ -23,7 +19,8 @@
 .option_values {
   display: flex;
   align-items: center;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 8rem 16rem;
 }
 .value input[type="radio"] {
   display: none;
@@ -34,9 +31,9 @@
 }
 
 .value.not-swatch label {
-  padding-bottom: 2px;
+  padding-bottom: 2rem;
   border-bottom: 1px solid transparent;
-  font-size: 14px;
+  font-size: 16rem;
 }
 .value.not-swatch input[type="radio"]:checked + label {
   border-color: black;

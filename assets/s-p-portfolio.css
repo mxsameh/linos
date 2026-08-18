@@ -43,15 +43,3 @@
 .category img {
   aspect-ratio: 3/4;
 }
-.category figure:nth-child(1) {
-  background: blue;
-}
-.category figure:nth-child(4) {
-  background: blue;
-}
-.category figure:nth-child(5) {
-  background: red;
-}
-.category figure:nth-child(6) {
-  background: green;
-}
