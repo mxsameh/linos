@@ -43,8 +43,8 @@
 
 .product_price {
   font-size: 16px;
-  display: flex;
-  gap: 8px;
+  /* display: flex;
+  gap: 8px; */
 }
 
 .product_atc button {
