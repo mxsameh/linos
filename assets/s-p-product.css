@@ -3,12 +3,11 @@
   padding-inline: var(--p-i);
 }
 .product_title {
+  max-width: 1250rem;
+  font-family: 'cg';
   font-size: 90rem;
   font-weight: 500;
   line-height: 1;
-  @media (width>1000px) {
-    font-size: 18px;
-  }
 }
 
 .product_info {
