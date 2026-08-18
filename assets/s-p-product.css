@@ -42,7 +42,7 @@
   text-align: center;
   color: black;
   /* margin-top: 40px; */
-  font-size: 12px;
+  font-size: 16rem;
   text-transform: uppercase;
 }
 .product_atc button:disabled {
