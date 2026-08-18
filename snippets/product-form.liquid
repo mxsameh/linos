@@ -10,7 +10,7 @@
   {% comment %}
     Options
   {% endcomment %}
-  {{ product.options_with_values. | json }}
+  {{ product.options_with_values | json }}
   {% unless product.has_only_default_variant %}
     {% for option in product.options_with_values %}
       {% render 'product-option', option: option %}
