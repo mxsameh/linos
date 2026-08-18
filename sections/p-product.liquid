@@ -27,6 +27,14 @@
         </p>
       </div>
     {% endif %}
+    <div class=''>
+
+    <div class="product_price">
+      <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
+      {{ shop.currency }}
+    </div>
+    </div>
+
   </div>
 
   {% render 'recommended-products' %}
