@@ -18,13 +18,14 @@
       {% render 'product-form' %}
     </div>
 
-    {% if product.description %}
-      <div class='c'>
+    <div class="c">
+      {% if product.description %}
         <p class="product_desc">
           {{ product.description | strip_html }}
         </p>
-      </div>
-    {% endif %}
+      {% endif %}
+    </div>
+
     <div class="r">
       <div class="product_price">
         <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
