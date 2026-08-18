@@ -5,7 +5,7 @@
   assign available = current_variant.available
 %}
 
-{% form 'product', product, class: 'pf' %}
+{% form 'product', product, class: 'pf', id: 'product_form' %}
   <input type="hidden" id="variant-id" name="id" value="{{ current_variant.id }}">
   {% comment %}
     Options
