@@ -14,11 +14,9 @@
   {% render 'product-gallery' %}
 
   <div class="product_info">
-    <div>
+    <div class="l">
       {% render 'product-form' %}
     </div>
-
-
 
     {% if product.description %}
       <div class="product_desc">
@@ -27,14 +25,12 @@
         </p>
       </div>
     {% endif %}
-    <div class=''>
-
-    <div class="product_price">
-      <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
-      {{ shop.currency }}
+    <div class="r">
+      <div class="product_price">
+        <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
+        {{ shop.currency }}
+      </div>
     </div>
-    </div>
-
   </div>
 
   {% render 'recommended-products' %}
