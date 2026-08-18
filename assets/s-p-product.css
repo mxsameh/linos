@@ -33,6 +33,9 @@
 }
 .product_info .r {
   width: 160rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .product_price {
