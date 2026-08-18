@@ -13,37 +13,32 @@
   <h1 class="product_title">{{ product.title }}</h1>
   {% render 'product-gallery' %}
 
-  {% comment %}
-    PRODUCT INFO
-  {% endcomment %}
-  <div class="product_info_">
-    <div class="product_info">
-      <div class="product_price">
-        <div class="current-price">
-          <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
-          {{ shop.currency }}
-        </div>
-
-        <div
-          class="compare-price {%unless compare_at_price %}d-n{% endunless %}"
-        >
-          <span>
-            {{ current_variant.compare_at_price | money_without_currency | remove: '.00' }}
-          </span>
-          {{ shop.currency }}
-        </div>
+  <div class="product_info">
+    <div class="product_price">
+      <div class="current-price">
+        <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
+        {{ shop.currency }}
       </div>
 
-      {% render 'product-form' %}
-
-      {% if product.description %}
-        <div class="product_desc">
-          <p>
-            {{ product.description | strip_html }}
-          </p>
-        </div>
-      {% endif %}
+      <div
+        class="compare-price {%unless compare_at_price %}d-n{% endunless %}"
+      >
+        <span>
+          {{ current_variant.compare_at_price | money_without_currency | remove: '.00' }}
+        </span>
+        {{ shop.currency }}
+      </div>
     </div>
+
+    {% render 'product-form' %}
+
+    {% if product.description %}
+      <div class="product_desc">
+        <p>
+          {{ product.description | strip_html }}
+        </p>
+      </div>
+    {% endif %}
   </div>
 
   {% render 'recommended-products' %}
