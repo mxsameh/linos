@@ -87,5 +87,5 @@ const updateProductInfo = (variant) => {
     $product_atc.classList.add("disabled");
     $product_atc.textContent = "Sold Out";
   }
-  console.log("updated");
+  // console.log("updated");
 };
