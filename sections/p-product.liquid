@@ -45,31 +45,6 @@
             </p>
           </div>
         {% endif %}
-
-        {% comment %}
-          {% render 'accordion',
-            heading: 'MATERIALS',
-            content: product.metafields.custom.material,
-            default: '100% Cotton'
-          %}
-        {% endcomment %}
-        {% liquid
-          assign y = false
-          if product.metafields.custom.fit or product.metafields.custom.material
-            assign y = true
-          endif
-        %}
-
-        {% if y %}
-          {% assign x = 'Materials: '
-            | append: product.metafields.custom.material
-            | append: '<br>'
-            | append: 'Fit: '
-            | append: product.metafields.custom.fit
-          %}
-
-          {% render 'accordion', heading: 'MORE INFORMATION', content: x, default: 'Contact for more info.' %}
-        {% endif %}
       </div>
     </div>
   </div>
