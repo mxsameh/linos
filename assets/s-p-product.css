@@ -19,6 +19,12 @@
   align-items: flex-start;
 }
 
+.product_desc {
+  font-size: 16rem;
+  /* line-height: 1.5; */
+  color: #555;
+}
+
 .product_price {
   font-size: 16px;
   display: flex;
