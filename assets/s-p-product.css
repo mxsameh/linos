@@ -1,13 +1,6 @@
 .p {
-  /* padding: 20px; */
 }
 .product {
-  display: flex;
-  flex-direction: column;
-  @media (width > 1000px) {
-    flex-direction: row;
-    align-items: flex-start;
-  }
 }
 
 
