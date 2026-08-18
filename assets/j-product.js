@@ -68,7 +68,7 @@ const updateProductInfo = (variant) => {
   // UPDATE COMPARE PRICE
   if (compare_at_price && compare_at_price > price) {
     $product_compare_price?.classList.remove("d-n");
-    $product_compare_price?.textContent = formatPrice(compare_at_price);
+    // $product_compare_price?.textContent = formatPrice(compare_at_price);
   } else {
     $product_compare_price?.classList.add("d-n");
   }
