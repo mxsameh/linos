@@ -24,8 +24,8 @@
     </div>
 
     <div class="r">
-      <div class='product_preorder'>
-
+      <div class="product_preorder">
+        {{ product.metafields.custom.dimensions }}
       </div>
       <div class="product_price">
         <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
