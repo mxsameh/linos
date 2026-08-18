@@ -43,7 +43,7 @@
 }
 
 .product_desc p {
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 16rem;
+  /* line-height: 1.5; */
   color: #555;
 }
