@@ -4,6 +4,7 @@
   assign current_variant = product.selected_or_first_available_variant
   assign available = current_variant.available
 %}
+{{ current_variant | json }}
 
 {% form 'product', product, class: 'pf', id: 'product_form' %}
   <input type="hidden" id="variant-id" name="id" value="{{ current_variant.id }}">
@@ -16,25 +17,24 @@
     {% endfor %}
   {% endunless %}
 
-
   {% comment %}
-    Add to Cart
-  <div class="product_atc">
-    {% if available %}
-      <button
-        type="submit"
-      >
-        Add to Bag
-      </button>
-    {% else %}
-      <button
-        type="submit"
-        disabled
-        class="disabled"
-      >
-        Sold Out
-      </button>
-    {% endif %}
-  </div>
+      Add to Cart
+    <div class="product_atc">
+      {% if available %}
+        <button
+          type="submit"
+        >
+          Add to Bag
+        </button>
+      {% else %}
+        <button
+          type="submit"
+          disabled
+          class="disabled"
+        >
+          Sold Out
+        </button>
+      {% endif %}
+    </div>
   {% endcomment %}
 {% endform %}
