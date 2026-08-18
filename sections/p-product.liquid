@@ -24,10 +24,7 @@
     </div>
 
     <div class="r">
-      <div class="product_preorder">
-        Preorder: 
-        {{ product.metafields.custom.preorder }}
-      </div>
+      <div class="product_preorder">Preorder: {{ product.metafields.custom.preorder }}</div>
       <div class="product_price">
         <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
         {{ shop.currency }}
