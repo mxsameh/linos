@@ -73,9 +73,9 @@ const updateProductInfo = (variant) => {
   }
 
   // UPDATE CURRENT PRICE
-  console.log('dd',price);
-  console.log('dd',price);
-    // $product_current_price?.textContent = formatPrice(price);
+  console.log("dd", price);
+  console.log("dss", formatPrice(price));
+  // $product_current_price?.textContent = formatPrice(price);
 
   // UPDATE AVAILABILITY
   if (available) {
