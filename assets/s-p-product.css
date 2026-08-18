@@ -2,17 +2,14 @@
   padding-top: 80rem;
   padding-inline: var(--p-i);
 }
-.product_title{
-
-  font-size: 90px;
+.product_title {
+  font-size: 90rem;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1;
   @media (width>1000px) {
     font-size: 18px;
   }
-
 }
-
 
 .product_info {
   padding-inline: var(--p-i);
@@ -21,8 +18,7 @@
   }
 }
 
-.product_title {
-}
+
 .product_price {
   font-size: 16px;
   display: flex;
