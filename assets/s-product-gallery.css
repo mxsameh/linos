@@ -1,11 +1,11 @@
 .p_g {
   width: 100%;
   display: flex;
-  @media (width > 1000px) {
+  /* @media (width > 1000px) {
     width: 75%;
     flex-wrap: wrap;
     padding-right: 40px;
-  }
+  } */
 }
 .p_g figure {
   flex-shrink: 0;
