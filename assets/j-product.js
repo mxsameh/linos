@@ -62,6 +62,9 @@ const updateProductInfo = (variant) => {
   const $product_current_price = document.querySelector(
     ".product_price .current-price span",
   );
+
+  console.log('s',$product_current_price);
+
   const $product_atc = document.querySelector(".product_atc button");
   // const $product_image = document.querySelector(".product_image img");
 
