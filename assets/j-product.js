@@ -74,6 +74,8 @@ const updateProductInfo = (variant) => {
   }
 
   // UPDATE CURRENT PRICE
+  console.log($product_current_price);
+
   $product_current_price?.textContent = formatPrice(price);
 
   // UPDATE AVAILABILITY
