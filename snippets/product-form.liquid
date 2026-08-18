@@ -4,7 +4,6 @@
   assign current_variant = product.selected_or_first_available_variant
   assign available = current_variant.available
 %}
-{{ current_variant | json }}
 
 {% form 'product', product, class: 'pf', id: 'product_form' %}
   <input type="hidden" id="variant-id" name="id" value="{{ current_variant.id }}">
