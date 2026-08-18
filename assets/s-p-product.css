@@ -1,21 +1,10 @@
 .p {
   padding-top: 80rem;
-}
-.product {
   padding-inline: var(--p-i);
 }
-
-/* PRODUCT INFO */
-.product_info_ {
-  width: 100%;
-  padding-top: 40px;
-  @media (width > 1000px) {
-    width: 25%;
-    position: sticky;
-    top: calc(var(--h-h) + 20px);
-    padding-right: 40px;
-  }
+.product {
 }
+
 .product_info {
   padding-inline: var(--p-i);
   @media (width > 1000px) {
