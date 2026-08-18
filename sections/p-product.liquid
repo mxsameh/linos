@@ -27,7 +27,9 @@
       <div class="product_price">
         Price:
         <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
-        {{ shop.currency }}
+        <span>
+          {{ shop.currency }}
+        </span>
       </div>
       {% comment %}
         Add to Cart
@@ -36,7 +38,6 @@
         {% if available %}
           <button
             type="submit"
-            
           >
             Add to Bag
           </button>
