@@ -14,10 +14,9 @@
 }
 
 .product_info {
-  padding-inline: var(--p-i);
-  @media (width > 1000px) {
-    padding-inline: 0;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .product_price {
