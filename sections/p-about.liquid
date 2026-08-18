@@ -68,8 +68,6 @@
       </div>
     </section>
 
-
-
     <script>
       (function () {
         var section = document.getElementById('portfolio-tabs-{{ section.id }}');
@@ -118,13 +116,11 @@
       })();
     </script>
 
-
-
     <div></div>
   </section>
 </div>
 
-    {% schema %}
+{% schema %}
 {
   "name": "Portfolio Category Tabs",
   "tag": "section",
@@ -163,13 +159,13 @@
     }
   ]
 }
-    {% endschema %}
-
-{% comment %} 
-{% schema %}
-{
-  "name": "about",
-  "settings": []
-}
 {% endschema %}
-  {% endcomment %}
+
+{% comment %}
+  {% schema %}
+  {
+    "name": "about",
+    "settings": []
+  }
+  {% endschema %}
+{% endcomment %}
