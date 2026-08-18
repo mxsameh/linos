@@ -18,6 +18,9 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+.product_info .l {
+  width: 160rem;
+}
 
 .product_info .c {
   max-width: 690rem;
