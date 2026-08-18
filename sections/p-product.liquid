@@ -36,16 +36,13 @@
 
       {% render 'product-form' %}
 
-      <div class="product_data">
-        {% if product.description %}
-          <div class="product_desc">
-            <h2>PPODUCT DESCRIPTION</h2>
-            <p>
-              {{ product.description | strip_html }}
-            </p>
-          </div>
-        {% endif %}
-      </div>
+      {% if product.description %}
+        <div class="product_desc">
+          <p>
+            {{ product.description | strip_html }}
+          </p>
+        </div>
+      {% endif %}
     </div>
   </div>
 
