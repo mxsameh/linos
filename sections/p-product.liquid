@@ -28,26 +28,26 @@
         <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
         {{ shop.currency }}
       </div>
-    </div>
-    {% comment %}
-      Add to Cart
-    {% endcomment %}
-    <div class="product_atc">
-      {% if available %}
-        <button
-          type="submit"
-        >
-          Add to Bag
-        </button>
-      {% else %}
-        <button
-          type="submit"
-          disabled
-          class="disabled"
-        >
-          Sold Out
-        </button>
-      {% endif %}
+      {% comment %}
+        Add to Cart
+      {% endcomment %}
+      <div class="product_atc">
+        {% if available %}
+          <button
+            type="submit"
+          >
+            Add to Bag
+          </button>
+        {% else %}
+          <button
+            type="submit"
+            disabled
+            class="disabled"
+          >
+            Sold Out
+          </button>
+        {% endif %}
+      </div>
     </div>
   </div>
 
