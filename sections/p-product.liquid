@@ -11,6 +11,7 @@
 
 <div class="p">
   <div class="product">
+    <h1 class="product_title">{{ product.title }}</h1>
     {% render 'product-gallery' %}
 
     {% comment %}
@@ -18,7 +19,6 @@
     {% endcomment %}
     <div class="product_info_">
       <div class="product_info">
-        <h1 class="product_title">{{ product.title }}</h1>
         <div class="product_price">
           <div class="current-price">
             <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
