@@ -14,12 +14,15 @@
   {% render 'product-gallery' %}
 
   <div class="product_info">
+
+    <div></div>
+    {% render 'product-form' %}
+
     <div class="product_price">
       <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
       {{ shop.currency }}
     </div>
 
-    {% render 'product-form' %}
 
     {% if product.description %}
       <div class="product_desc">
