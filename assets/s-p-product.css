@@ -38,13 +38,11 @@
   flex-direction: column;
   align-items: flex-end;
   font-size: 16rem;
-  /* color: #555; */
+  color: #555;
 }
 
 .product_price {
   font-size: 16px;
-  /* display: flex;
-  gap: 8px; */
 }
 
 .product_atc button {
