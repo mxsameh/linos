@@ -5,6 +5,7 @@
 .product_title {
   max-width: 1250rem;
   text-align: center;
+  text-transform: uppercase;
   font-family: "cg";
   font-size: 90rem;
   font-weight: 500;
