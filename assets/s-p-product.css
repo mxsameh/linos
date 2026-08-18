@@ -4,6 +4,13 @@
 }
 .product_title{
 
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 1.4;
+  @media (width>1000px) {
+    font-size: 18px;
+  }
+
 }
 
 
@@ -15,12 +22,6 @@
 }
 
 .product_title {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.4;
-  @media (width>1000px) {
-    font-size: 18px;
-  }
 }
 .product_price {
   font-size: 16px;
