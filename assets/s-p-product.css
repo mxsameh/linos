@@ -52,8 +52,9 @@
   font-size: 16rem;
   text-transform: uppercase;
   padding-bottom: 2rem;
-  border-bottom: ;
+  border-bottom: 1px solid black;
 }
 .product_atc button:disabled {
   color: #999;
+  border-color: transparent;
 }
