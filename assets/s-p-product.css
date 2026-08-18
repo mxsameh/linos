@@ -20,13 +20,13 @@
 }
 
 .product_info .c {
-  max-width: 960rem;
+  max-width: 690rem;
   text-align: center;
 }
 .product_desc {
   font-size: 16rem;
   /* line-height: 1.5; */
-  color: #555;
+  /* color: #555; */
 }
 
 .product_price {
