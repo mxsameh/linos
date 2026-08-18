@@ -92,11 +92,17 @@
         "heading": "Engagements",
         "order": 3
       }
+    },
+    "enquire_EQY8m4": {
+      "type": "enquire",
+      "name": "Enquire",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "protfolio_category_BMhnem",
-    "protfolio_category_tGma4f"
+    "protfolio_category_tGma4f",
+    "enquire_EQY8m4"
   ]
 }
