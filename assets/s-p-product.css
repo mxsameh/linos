@@ -19,9 +19,9 @@
   align-items: flex-start;
 }
 
-.product_info .c{
+.product_info .c {
   max-width: 960rem;
-
+  text-align: center;
 }
 .product_desc {
   font-size: 16rem;
@@ -50,4 +50,3 @@
 .product_atc button:disabled {
   color: #999;
 }
-
