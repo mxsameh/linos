@@ -39,13 +39,14 @@
   align-items: flex-end;
   font-size: 16rem;
   color: #555;
+
+  & span {
+    color: black;
+  }
 }
 
 .product_price {
   font-size: 16px;
-  & span {
-    color: black;
-  }
 }
 
 .product_atc button {
